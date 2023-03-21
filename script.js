@@ -9,13 +9,27 @@ namedFunction);
 
 let button2 = document.getElementById("button2");
 button2.addEventListener("click", function() {
-  console.log("this === " + this); // this === #btn2
+  console.log("this === " + this);
+  alert(this.innerHTML);// this === #btn2
 });
 
 function namedFunction() {
   console.log("this === " + this); // this === #btn1
   alert(this.innerHTML);
 }
+
+
+let button3 = document.getElementById("button3");
+button3.addEventListener("click", () => {
+    console.log("this === " + this); // this === window
+    alert(this.innerHTML);
+});
+
+
+
+
+
+
 
 let menu1 = document.getElementById('menu1');
 
